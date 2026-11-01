@@ -135,7 +135,7 @@ void example2() {
 
 /* KEY POINTS
 
-  PERCENT -> decimal. Divide by 100.
+  PERCENT -> decimal. Divide by 100.i
      12%  ->  * 0.12
       5%  ->  * 0.05
      50%  ->  * 0.5
