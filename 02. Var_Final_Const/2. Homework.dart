@@ -156,6 +156,8 @@ void task4() {
   const appName = 'Noor Eats';         // cannot be changed strict
   final total = 35000;                 // before checking out will show total
   final orderTime = DateTime.now();    // while running the app we can get the date of the order
+
+  print('$vat, $customer, $cartItems, $appName, $total, $orderTime');
 }
 
 // ==============================================
