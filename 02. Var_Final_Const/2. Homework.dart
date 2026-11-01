@@ -37,7 +37,7 @@ void main() {
 void task1() {
   var name = 'Davron';
   var age = 25;
-  var price = 250000;
+  var price = 250000.00;
   var isGoodBoy = true;
   var city = 'Tashkent';
 
@@ -80,7 +80,7 @@ void task2() {
   final portions = 2;
   final total = price * portions;
 
-  print("$portions * $dish from $restaurant = $total so'm ");
+  print("$portions x $dish from $restaurant = $total so'm");
 
 }
 
@@ -151,7 +151,7 @@ void task3() {
 
 void task4() {
   const vat = 0.12;                    // because it's law
-  var customer = 'John';               // customer can change his name whenever he wants
+  final customer = 'John';             // customer cannot change his name while ordering the goods
   var cartItems = 11;                  // can be changed if the user wants less or more
   const appName = 'Noor Eats';         // cannot be changed strict
   final total = 35000;                 // before checking out will show total
@@ -180,9 +180,15 @@ void task4() {
 
 void task5() {
 
-  // var String name = 23;
-  // final number = 32; -> final number = 33;
-  // const name = 'Book'; -> const name = "Note Book";
-  // const orderTime = Date.time.now();
+// var name = 'Davron';
+// name = 23;                        
+
+// final number = 32;
+// number = 33;                      
+
+// const label = 'Book';
+// label = 'Note Book';               
+
+// const orderTime = DateTime.now(); 
 
 }
