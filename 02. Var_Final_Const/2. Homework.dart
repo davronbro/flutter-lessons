@@ -182,13 +182,18 @@ void task5() {
 
 // var name = 'Davron';
 // name = 23;                        
+// Error: A value of type 'int' can't be assigned to a variable of type 'String'.
 
 // final number = 32;
 // number = 33;                      
+// Error: Can't assign to the final variable 'number'.
 
 // const label = 'Book';
-// label = 'Note Book';               
+// label = 'Note Book';  
+// Error: Can't assign to the const variable 'label'.             
 
 // const orderTime = DateTime.now(); 
+// Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+// Try using a constructor or factory that is 'const'.
 
 }
