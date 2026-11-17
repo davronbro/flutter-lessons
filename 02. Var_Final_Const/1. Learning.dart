@@ -224,13 +224,13 @@ void example4(){
   final double total = subtotal + vatAmount + deliveryFee;
  
   // Genuinely change as the user taps -> var
-  var itmesInCart = 3;
-  itmesInCart = 4;
+  var itemsInCart = 3;
+  itemsInCart = 4;
  
   print('Subtotal: $subtotal');   // Subtotal: 135000
   print('VAT: $vatAmount');       // VAT: 16200.0
   print('Total: $total');         // Total: 166200.0
-  print('Items: $itmesInCart');   // Itmes: 4
+  print('Items: $itemsInCart');   // Items: 4
 }
  
 /* KEY POINTS
