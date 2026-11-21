@@ -40,7 +40,7 @@ void task1() {
   int minimumOrder = 50000;
   int freeDelivery = 100000;
 
-  print('Above minimum: ${total > minimumOrder}');
+  print('Above minimum: ${total >= minimumOrder}');
   print('Free delivery: ${total >= freeDelivery}');
   print('Exactly minimum: ${total == minimumOrder}');
 }
@@ -73,7 +73,7 @@ void task2() {
   bool isNewCustomer = false;
   bool isRaining = true;
 
-  bool freeDelivery = total >= 100000 || !isNewCustomer;
+  bool freeDelivery = total >= 100000 || isNewCustomer;
   print('Free Delivery: $freeDelivery');
 
   // ignore: dead_code
@@ -157,8 +157,8 @@ void task4() {
 
   print('Before: ${typed.length}');
   print('After: ${typed.trim()}');
-  print('Lowecase: ${typed.toLowerCase()}');
-  print('Blank is empty: ${blank.isEmpty}');
+  print('Lowecase: ${typed.trim().toLowerCase()}');
+  print('Blank is empty: ${blank.trim().isEmpty}');
 }
  
 // ==============================================
@@ -191,10 +191,10 @@ void task4() {
 void task5() {
   String phone = '+998 99 827 99 27';
   String menu = 'Lagman,Plov,Manti';
+  String clean = phone.replaceAll(' ', '');
 
-  print(phone.replaceAll(' ',""));
   print("Uzbek number: ${phone.startsWith('+998')} ");
-  print('Length: ${phone.trim().length}');
+  print('Length: ${clean.trim().length}');
   print(menu.split(','));
   print("Has plov: ${menu.contains('Plov')}");
 }
