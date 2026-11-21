@@ -192,7 +192,7 @@ void task5() {
   String phone = '+998 99 827 99 27';
   String menu = 'Lagman,Plov,Manti';
   String clean = phone.replaceAll(' ', '');
-
+  print(clean);
   print("Uzbek number: ${phone.startsWith('+998')} ");
   print('Length: ${clean.trim().length}');
   print(menu.split(','));
