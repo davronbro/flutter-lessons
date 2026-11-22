@@ -102,6 +102,14 @@
 //    0  1  2  3  4  5  6  7
 //
 //  length = 8, last position = 7
+//
+//  length   = HOW MANY      position = WHERE (starts at 0)
+//  last position = length - 1
+//
+//  'Tashkent'.indexOf('k')     4    character -> position
+//  'Tashkent'[4]               k    position  -> character
+//  city[city.length - 1]       t    the last character
+//  'Tashkent'[8]               RangeError — crashes while running
  
 // ----------------------------------------------
 // 10. CHAINING

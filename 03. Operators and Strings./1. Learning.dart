@@ -237,6 +237,11 @@ void example5() {
   print("Position of k: ${city.indexOf('k')}");      // Position of k: 4
   print("Position of z: ${city.indexOf('z')}");      // Position of z: -1   not found
 
+  // position -> character: use [ ]
+  print('At 0: ${city[0]}');                         // At 0: T
+  print('At 4: ${city[4]}');                         // At 4: k
+  print('Last: ${city[city.length - 1]}');           // Last: t    length 8 - 1 = 7
+
   String menu = 'Lagman,Plov,Manti';
   print("Menu: ${menu.split(',')}");                 // Menu: [Lagman, Plov, Manti]
 }
@@ -253,12 +258,19 @@ void example5() {
   Counting starts at 0:
     T  a  s  h  k  e  n  t
     0  1  2  3  4  5  6  7
+
+  length   = HOW MANY characters  -> 8
+  position = WHERE, starts at 0   -> last one is 7  (length - 1)
+
+  Two directions:
+    city.indexOf('k')   character -> position   = 4
+    city[4]             position  -> character  = k
 */
 
 /* WATCH OUT
-  city.substring(0, 20)
-  -> RangeError — the text is only 8 characters long.
-  This one is NOT caught before running. The app crashes while running.
+  city[8]  or  city.substring(0, 20)
+  -> RangeError — position 8 doesn't exist, the last one is 7.
+  NOT caught before running. The app crashes while running.
 */
 
 // ==============================================
